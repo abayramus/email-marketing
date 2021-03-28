@@ -1,0 +1,126 @@
+.bg-bluee{
+    background-color: #073b4c
+}
+
+/* giving space from top and bottom */
+.top-part-space{
+    padding: 2% 5%;
+}
+
+.nav-radius{
+    border-radius: 1rem;
+}
+
+/* I can take the ready bootstrap class and modufy it */
+/* My framework will overwrite bootstrap.css class */
+/* Bootstrap will read below line which is css/mystyle.css */
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  /* 45 pix space from top and button, 0 pixel space from left and right */
+  .top-buttom-45px-space{
+      padding: 45px 0;
+  }
+
+.slogan {
+    font-family: "Ubuntu";
+    font-size: 2.0rem;
+    line-height: 1.5;
+    margin-bottom: 10%;
+}
+
+/* .image{
+        width: 80%;
+        transform: rotate(25deg);    
+} */
+
+
+/* Run below when the screen is bigger that 768 px */
+@media(min-width: 768px){
+    .image{
+        width: 100%;
+        transform: rotate(25deg); 
+        margin-left: 30%; 
+        margin-top: 5%; 
+} 
+}
+
+/* Run below when the screen is smaller that 767 px */
+@media(max-width: 767px){
+    .image{
+        margin-top: 30px;
+        width: 90%;
+        margin-left: 5%;
+        transform: rotate(0deg);     
+} 
+
+/* When the dislay is less than 767 px, center the   */
+.download-links{
+    display: flex;
+    justify-content: center;
+
+}
+}
+
+
+
+@media(min-width: 992px){
+    .r-l-padding{
+        padding: 3% 15%;
+    }
+}
+
+@media(max-width: 991px){
+    .r-l-padding{
+        padding: 3% 3%;
+    }
+}
+
+@media(min-width: 1200px){
+    .r-l-padding{
+        padding: 3% 10%;
+    }
+}
+
+.fas{
+    color: #ffd166;
+    margin-left: 10%;
+}
+
+/* press from top-buttom 3% left right 10% */
+.comment{
+	padding: 3% 10%;
+}
+
+/* style commend class p tag pnly */
+.comment p{
+font-size: 1.5rem;
+}
+
+/* instead of adding a new class to style image, we can use comment img */
+.comment img{
+    width: 10%;
+}
+
+/* On small screens ther is no space in between the divs
+Create a class that applies only div(.col-lg-4) of rows */
+/* #pricing .container-fluid .row .col-lg-4{
+    margin-top: 10px;
+
+} */
+/* OR WE CAN ADD mt-3 or mt-5 in the div element or */
+/* On small screens ther is no space in between the divs
+Create a class that applies only div(.col-lg-4) of rows */
+/* NOTE ID IS NOT RECOMMENDED IN CSS FILES
+SO WE CAN ADD CLASS O THE ELEMENT WITH class="pricing" and Use it in the css */
+/* #pricing .row .col-lg-4{
+    margin-top: 10px;
+
+} */
+/* SO WE CAN ADD CLASS O THE ELEMENT WITH class="pricing" and Use it in the css */ 
+.pricing .row .col-lg-4{
+    margin-top: 10px;
+}

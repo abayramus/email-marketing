@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+        <!--Now I can use css folder and bootstrap.css file-->
+        <!--I can add new css file and use that css file when I need-->
+        <!--For example let's add mystyle.css in the css folder. Then I can use taht custom file-->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/mystyle.css">
+
+         <!-- adding jquery to make it interactivce. No need to give any details. Without this we we cant make it interactive
+        When we use react we wont need jquery-->
+           <!-- When we add jquery and j query, menu is now interactive, the slider is now interactice -->
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
+       
+        <!-- importing bootstrap.js fron js folder -->
+        <!-- we import js codes usign script -->
+     
+        <script src="js/bootstrap.js"></script> 
+       
+
+    </head>
+    <body>
+        <!--section is block element like div-->
+        <section id = "top-part" class="bg-bluee">
+             <!--container-fluid gives space accourding to the full screen size -->
+             <!--Dis kotainer tam genislik-->
+             <!--We can get the styles form the bootstrap or from our own style sheet -->
+            <!-- <div class="container-fluid bg-info"> -->
+            <div class="container-fluid top-part-space r-l-padding">
+                <!--ic kotainer give left and right spce-->
+                <div class="container text-light">
+
+                    <!-- Go to https://getbootstrap.com/docs/4.5/components/navbar/ -->
+                    <!-- Copy one of the  nav bar and save here -->
+                    <!-- navigation bar rounding -->
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-warning nav-radius">
+                        <a class="navbar-brand" href="#">E-Mail</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                          <div class="navbar-nav">
+                            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link active" href="#">Contact Us</a>
+                          </div>
+                        </div>
+                      </nav> 
+                   <!-- <h1>Do you want to send your product to millions, with just one click ? </h1>  -->
+                   <div class="row top-buttom-45px-space">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h1 class="slogan">Do you want to send your product to millions, with just one click ? <br>We are here to help you! </h1> 
+                        <div class="download-links">
+                        <button type="button" class="btn btn-secondary btn-lg"><i class="fab fa-apple"></i>Download</button>
+                        <button type="button" class="btn btn-light btn-lg ml-3"><i class="fab fa-android"></i>Download</button>
+                    </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img class="image" src="images/mobile.png">
+                    </div>
+                </div>
+                </div>     
+            </div>
+        </section>
+
+        <!-- Adding the buttom part -->
+        <section id="ads">
+            <!-- container fluid -->
+            <div class="container-fluid r-l-padding">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <i class="fas fa-rocket fa-3x"></i>
+                        <h2>Fast Connection</h2>
+                        <p>Connect with many people within  10 minutes</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <i class="fas fa-dollar-sign fa-3x"></i>
+                        <h2>Great Price</h2>
+                        <p>Make your advertisement with low cost</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <i class="fas fa-smile fa-3x"></i>
+                        <h2>Permenents Adds</h2>
+                        <p>Emials are becomming perminent in the customers</p>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                       <i class="fas fa-comments fa-3x"></i> 
+                       <h2>One on one Communication</h2>
+                       <p>You can connect with directly with the customers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comments Section Starts  -->
+        <section id="comments">
+            <div class="container-fluid r-l-padding bg-bluee">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+
+                          <div class="text-center text-light comment">
+                              <!-- the size of paragraph and name will be different so let's style this paragraph 
+                                We can say style comment class p tag in mystyle-->
+                            <p>Very fast responsive customer service! I sent multiple mails within minutes. There were people who were responded mimediatelly. It is very very exciting and awesome system.</p>
+                            <img class="rounded-circle" src="images/avatar.jpeg" alt="avatar_pic">
+                            Jim Carrey
+                          </div>
+                          
+                      </div>
+
+                      <div class="carousel-item">
+
+                         <div class="text-center text-light comment">
+                              <!-- the size of paragraph and name will be different so let's style this paragraph 
+                                We can say style comment class p tag in mystyle-->
+                            <p>I honestly wasn't expecting such a good quality service with this price. Custumer service was very helpful. I keep getting fast responses from the customers.</p>
+                            <img class="rounded-circle" src="images/avatar.jpeg" alt="avatar_pic">
+                            John Lennon
+                          </div>
+
+                      </div>
+
+                      <div class="carousel-item">
+
+                        <div class="text-center text-light comment">
+                            <!-- the size of paragraph and name will be different so let's style this paragraph 
+                              We can say style comment class p tag in mystyle-->
+                          <p>I got different similar E0Mail marketing services, but non of them was fast and reliable than your service. I will be your permanent customer and I am very happy with your service!</p>
+                          <img class="rounded-circle" src="images/avatar.jpeg" alt="avatar_pic">
+                          Jean Connery
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+        </section>
+
+
+
+        <!-- Craeting Pricing section with id = pricing-->
+        <section id="pricing" class="pricing">
+            <!-- open a div class - container-fluid and use r-l-padding for spacing -->
+            <div class="container-fluid r-l-padding">
+                <!-- opening row first before i create 3 columns -->
+                <div class="row">
+                    <!-- crea a column on large screen 4 units, midiom screen 6 units, small screen 12 units -->
+                    <!-- Because in the origunal website, it is desinged for large, midiom and small screen -->
+                    <!-- Below code will give us 3 column onlarge, 2 column on medium, 1 column in small screens -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <!-- Copy the approprate card from the bootstrap website
+                        Change the text
+                        add <br/> to seperate rows -->
+                        <!-- center the text using text-center on the card level -->
+                        <div class="card text-center">
+                            <div class="card-header">
+                              Monthly
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">9.99$</h5>
+                              <p class="card-text">1.000 Main Daily<br/>
+                                 7/24 Communication<br/>
+                                 No technical support</p>
+                              <a href="#" class="btn btn-primary">BUY</a>
+                            </div>
+                          </div>
+                    </div>
+                      <!-- crea a column on large screen 4 units, midiom screen 6 units, small screen 12 units -->
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                            <!-- Copy the approprate card from the bootstrap website
+                        Change the text
+                        add <br/> to seperate rows -->
+                        <!-- center the text using text-center on the card level -->
+                        <div class="card text-center">
+                            <div class="card-header">
+                              Yearly
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">9.99$</h5>
+                              <p class="card-text">1.000 Main Daily<br/>
+                                 7/24 Communication<br/>
+                                 Yes technical support</p>
+                              <a href="#" class="btn btn-primary">BUY</a>
+                            </div>
+                          </div>
+                    </div>
+                      <!-- crea a column on large screen 4 units, midiom screen 6 units, small screen 12 units -->
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                            <!-- Copy the approprate card from the bootstrap website
+                        Change the text
+                        add <br/> to seperate rows -->
+                        <!-- center the text using text-center on the card level -->
+                        <div class="card text-center">
+                            <div class="card-header">
+                              Lifelong
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">9.99$</h5>
+                              <p class="card-text">No Daily limit<br/>
+                                 7/24 Communication<br/>
+                                 Yes technical support</p>
+                              <a href="#" class="btn btn-primary">BUY</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION START -->
+        <section id="footer">
+            <div class="container-fluid r-l-padding bg-bluee text-light">
+                <a target="_blank" href=""><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="" class="mr-1 ml-1"><i class="fab fa-facebook-f"></i></a>
+                <a target="_blank" href=""><i class="fab fa-instagram-square"></i></a>
+                <span class="ml-3">All Right Reserved</span>
+            </div>
+        </section>
+    </body>  
+</html>
